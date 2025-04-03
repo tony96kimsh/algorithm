@@ -4,27 +4,39 @@
 
 using namespace std;
 
-int cycle;
-
-int main () {
-    cout << "파보나치 연산 횟수 입력 : ";
-    cin >> cycle;
-
-    int* arr = new int[cycle + 2];
-
-    arr[0] = 0;
-    arr[1] = 1;
-
-    for(int i = 0; i < cycle - 1; i++) {
-        arr[i + 2] = arr[i] + arr[i + 1];
+void getFbc(int* ar, int num) {
+    for(int i = 0; i < num - 1; i++) {
+        ar[i + 2] = ar[i] + ar[i + 1];
     }
+}
 
-    for(int i=0; i < cycle + 1; i++) {
-        cout << arr[i];
-        if(i != cycle)
+void setFbc(int* ar, int num) {
+    for(int i=0; i < num + 1; i++) {
+        cout << ar[i];
+        if(i != num)
             cout << ", ";
     }
     cout << endl;
+}
+
+void inpCyc (int* arr, int cyc) {
+    while(!(cyc > 0 && cyc <= 20)){
+        cout << "피보나치 연산 횟수 입력 : ";
+        cin >> cyc;
+    }
+    arr = new int[cyc + 2];
+    arr[0] = 0;
+    arr[1] = 1;
+}
+
+int main () { 
+    int cyc;
+    int* arr;
+    
+    inpCyc(arr, cyc);
+    getFbc(arr, cyc);
+    setFbc(arr, cyc);
+
 
     delete[] arr;
     return 0;

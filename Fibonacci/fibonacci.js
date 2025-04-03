@@ -4,18 +4,29 @@ const rl = readline.createInterface({
     output:process.stdout,    
 })
 
-let cycle;
+let cyc;
 let arr = [0, 1];
 let sum;
 
-
-rl.question('파보나치 연산 수 입력: ', e => {
-    cycle = Number(e);
-
-    for(let i = 0; i < cycle - 1; i++) {
-        arr.push(arr[i] + arr[i + 1]);
+const getFbc = (ar, num) => {
+    for(let i = 0; i < num - 1; i++) {
+        ar.push(ar[i] + ar[i + 1]);
     }
-    console.log(arr);
+}
 
-    rl.close();
-})
+
+const askCycle = () => { 
+    rl.question('파보나치 연산 수 입력: ', e => {
+        cyc = Number(e);
+        if(!(cyc > 0 && cyc <= 20)) {
+            console.log('조건에 맞지 않아요. 다시 입력하세요.');
+            askCycle();
+        } else {
+            getFbc(arr, cyc)
+            console.log(arr);
+            rl.close();
+        }
+    })
+}
+
+askCycle();

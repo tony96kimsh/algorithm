@@ -12,4 +12,4 @@
 
 [퀵 정렬](https://www.notion.so/1c9f398452c380f5a2e5e2d2bdd1e2b6?pvs=21)
 
-[파보나치 수열](https://www.notion.so/1c9f398452c3802a92b6cdd9322d55b6?pvs=21)got
+[파보나치 수열](https://www.notion.so/1c9f398452c3802a92b6cdd9322d55b6?pvs=21)

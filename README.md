@@ -1,4 +1,15 @@
-# algorithm
-- [버블 정렬 구현 in C++, JS, PY](https://velog.io/@tonyisback/%EB%B2%84%EB%B8%94-%EC%A0%95%EB%A0%AC-%EA%B5%AC%ED%98%84-C-JS-PY)
+# 검색
 
-- [파보나치 수열 in CY+, JS, PY](https://velog.io/@tonyisback/fabonacci)
+[알고리즘 - 이분검색](https://www.notion.so/1baf398452c380cd93c6caead0d3c78d?pvs=21)
+
+# 정렬
+
+[버블 정렬](https://www.notion.so/1c8f398452c380a6a290c89db2d8ddf8?pvs=21)
+
+[선택 정렬](https://www.notion.so/1c9f398452c380cc94facade646beba0?pvs=21)
+
+[삽입 정렬](https://www.notion.so/1c9f398452c380118f23cf73c3b1149e?pvs=21)
+
+[퀵 정렬](https://www.notion.so/1c9f398452c380f5a2e5e2d2bdd1e2b6?pvs=21)
+
+[파보나치 수열](https://www.notion.so/1c9f398452c3802a92b6cdd9322d55b6?pvs=21)got
